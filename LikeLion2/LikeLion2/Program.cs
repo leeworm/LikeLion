@@ -12,13 +12,12 @@ namespace LikeLion2
     {
         static void Main(string[] args)
         {
-            // 숫자 데이터 형식: 정수와 실수를 다룰 때 사용하는 다양한 타입
-            int integerNum = 10; // 정수 데이터
-            float floatNum = 3.14f; // 단정밀도 실수
-            double doubleNum = 3.14159; // 배정밀도 실수
-            Console.WriteLine(integerNum); // 출력: 10
-            Console.WriteLine(floatNum); // 출력: 3.14
-            Console.WriteLine(doubleNum); // 출력: 3.14159
+            // 정수 데이터 형식: 소수점이 없는 숫자를 표현
+            int intValue = -100; // 4바이트 크기의 정수
+            long longValue = 1234567890L; // 8바이트 크기의 정수
+
+            Console.WriteLine(intValue); // 출력: -100
+            Console.WriteLine(longValue); // 출력: 1234567890
         }
     }
 }
