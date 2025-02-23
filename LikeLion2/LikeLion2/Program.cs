@@ -12,12 +12,13 @@ namespace LikeLion2
     {
         static void Main(string[] args)
         {
-            // 정수 데이터 형식: 소수점이 없는 숫자를 표현
-            int intValue = -100; // 4바이트 크기의 정수
-            long longValue = 1234567890L; // 8바이트 크기의 정수
-
-            Console.WriteLine(intValue); // 출력: -100
-            Console.WriteLine(longValue); // 출력: 1234567890
+            // 부호 있는 정수: 음수와 양수를 모두 표현 가능
+            sbyte signedByte = -50; // 1바이트 크기
+            short signedShort = -32000; // 2바이트 크기
+            int signedInt = -2000000000; // 4바이트 크기
+            Console.WriteLine(signedByte); // 출력: -50
+            Console.WriteLine(signedShort); // 출력: -32000
+            Console.WriteLine(signedInt); // 출력: -2000000000
         }
     }
 }
